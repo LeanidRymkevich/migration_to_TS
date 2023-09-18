@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>NewsPortal</title>
+        <link rel="icon" href="./assets/favicon.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>News Portal</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="sort">
+                    <button class="sort__button">A → Z</button>
+                    <input class="sort__input" type="text" placeholder="Searched publisher">
+                </div>
+                <div class="sources buttons"></div>
+                <div class="news"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer__container">
+                <p class="copyright">
+                    Copyright <a href="https://newsapi.org">NewsAPI 2023</a>
+                </p>
+                <a class="github" href="https://github.com/LeanidRymkevich" target="_blank">
+                    <img class="github__logo" src="./assets/svg/github.svg" alt="github-logo"></img>
+                    <span class="github__user">Leanid Rymkevich</span>
+                </a>
+                <a class="rss-link" href="https://rs.school/js/" target="_blank">
+                    <img class="rss-link__logo" src="./assets/svg/rs-school.svg" alt="github-logo"></img>
+                </a>
+            </div>
+        </footer>
+
+        <template id="sourceItemTemp">
+            <div class="source__item">
+                <span class="source__item-name"></span>
+            </div>
+        </template>
+
+        <template id="newsItemTemp">
+            <div class="news__item">
+                <div class="news__meta">
+                    <div class="news__meta-photo"></div>
+                    <ul class="news__meta-details">
+                        <li class="news__meta-author"></li>
+                        <li class="news__meta-date"></li>
+                    </ul>
+                </div>
+                <div class="news__description">
+                    <h2 class="news__description-title"></h2>
+                    <h3 class="news__description-source"></h3>
+                    <p class="news__description-content"></p>
+                    <p class="news__read-more">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </template>
+    </body>
+</html>

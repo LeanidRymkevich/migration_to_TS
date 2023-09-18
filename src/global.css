@@ -1,0 +1,95 @@
+body {
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1280px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 540px){
+    .footer__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+}
+
+footer .copyright,
+.github {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+footer .copyright a,
+.github__user {
+    color: #444;
+    transition: color .3s ease-in-out;
+}
+
+footer .copyright a:hover,
+.github:hover .github__user {
+    color: #555;
+}
+
+footer .copyright:before {
+    content: '©';
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.github__logo {
+    display: inline-block;
+    width: 18px;
+}
+
+.rss-link {
+    display: block;
+    filter: brightness(0.7);
+    transition: filter .3s ease-in-out;
+}
+
+.rss-link:hover {
+    filter: brightness(1.5);
+}
+
+.rss-link__logo {
+    display: block;
+    height: 30px;
+}
